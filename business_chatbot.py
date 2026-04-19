@@ -5,26 +5,27 @@ from groq import Groq
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 # ============================================
-# EDIT THIS FOR EACH CLIENT
+# HANAN MAYO PIZZA - CUSTOMER SUPPORT CHATBOT
 # ============================================
-BUSINESS_NAME = "Pizza Palace"
-BUSINESS_TAGLINE = "Lahore's Finest Pizza — Delivered Hot & Fresh"
+BUSINESS_NAME = "Hanan Mayo Pizza"
+BUSINESS_TAGLINE = "Fresh & Delicious Pizza — Made with Love"
 BUSINESS_EMOJI = "🍕"
-THEME_COLOR = "#FF4B4B"
+THEME_COLOR = "#FF6B35"  # Warm orange-red, perfect for pizza
 BUSINESS_INFO = """
-You are a helpful customer support assistant for Pizza Palace.
+You are a helpful customer support assistant for Hanan Mayo Pizza.
 
 About us:
-- We are a pizza restaurant in Lahore, Pakistan
+- We are Hanan Mayo Pizza, serving delicious fresh pizza
 - Open: Every day 11am to 11pm
-- Phone: 0347-1018881
-- Address: 23 Main Boulevard, Gulberg, Lahore
+- Phone: [YOUR-PHONE-NUMBER]
+- Address: [YOUR-ADDRESS]
 
 Our Menu:
-- Margherita Pizza: Rs. 800 (small), Rs. 1400 (large)
-- BBQ Chicken Pizza: Rs. 950 (small), Rs. 1600 (large)
+- Mayo Special Pizza: Rs. 850 (small), Rs. 1500 (large)
+- Chicken Fajita Pizza: Rs. 950 (small), Rs. 1600 (large)
 - Pepperoni Pizza: Rs. 900 (small), Rs. 1500 (large)
-- Garlic Bread: Rs. 300
+- Veggie Delight Pizza: Rs. 800 (small), Rs. 1400 (large)
+- Garlic Bread with Cheese: Rs. 350
 - Soft Drinks: Rs. 150
 
 Delivery:
@@ -35,7 +36,7 @@ Delivery:
 Rules:
 - Always be polite and friendly
 - Keep answers short and clear
-- If you don't know something, say "Please call us at 0300-1234567"
+- If you don't know something, say "Please call us at [YOUR-PHONE-NUMBER]"
 - Never make up information not listed above
 - Answer in the same language the customer uses (Urdu or English)
 - Always end with a helpful follow-up question
@@ -58,7 +59,7 @@ st.markdown(f"""
 
     /* Header */
     .header {{
-        background: linear-gradient(135deg, {THEME_COLOR}, #ff8c00);
+        background: linear-gradient(135deg, {THEME_COLOR}, #ff4757);
         padding: 28px 24px;
         border-radius: 0 0 24px 24px;
         margin-bottom: 24px;
@@ -154,7 +155,7 @@ st.markdown(f"""
     <div class="info-card">
         <div class="icon">📞</div>
         <div class="label">Call Us</div>
-        <div class="value">0347-1018881</div>
+        <div class="value">[YOUR-PHONE-NUMBER]</div>
     </div>
 </div>
 """, unsafe_allow_html=True)
