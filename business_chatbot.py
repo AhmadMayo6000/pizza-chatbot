@@ -8,7 +8,7 @@ client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 # HANAN MAYO PIZZA - CUSTOMER SUPPORT CHATBOT
 # ============================================
 BUSINESS_NAME = "Hanan Mayo Pizza"
-BUSINESS_TAGLINE = "Fresh & Delicious Pizza — Made with Love"
+BUSINESS_TAGLINE = "Fresh & Delicious Pizza!"
 BUSINESS_EMOJI = "🍕"
 THEME_COLOR = "#FF6B35"  # Warm orange-red, perfect for pizza
 BUSINESS_INFO = """
