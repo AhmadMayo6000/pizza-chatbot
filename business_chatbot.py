@@ -155,7 +155,7 @@ st.markdown(f"""
     <div class="info-card">
         <div class="icon">📞</div>
         <div class="label">Call Us</div>
-        <div class="value">[YOUR-PHONE-NUMBER]</div>
+        <div class="value">0347-1018881</div>
     </div>
 </div>
 """, unsafe_allow_html=True)
